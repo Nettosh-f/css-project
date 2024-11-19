@@ -1,8 +1,11 @@
+* {
+    border:red solid 2px;
+}
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: url("./assets/images/istockphoto-1125908844-1024x1024.jpg");
+  /* background: url("./assets/images/istockphoto-1125908844-1024x1024.jpg"); */
   color: #333;
 }
 .header {
@@ -40,21 +43,35 @@ body {
 
 .hero {
   padding: 20px;
-  height: auto;
-  width: 80vw;
-  background-color: white;
+  height: 35vh;
+  width: 56vw;
+  background: white;
   align-self: center;
   justify-self: center;
+}
+
+.header-text {
+    padding-left: 1% ;
+    position: absolute;
+    z-index: 1;
+    width: 54vw;
+    height:34vh;
+    top:90px;
+    left: 22%;
+    font-size: 1.5vmin;
+    text-align: center;
+    color: azure;
 }
 h1 {
   justify-self: center;
   background-color: white;
 }
 .hero video {
-  height: 67%;
+    width: 100%;
+  height: auto;
   max-height: 100%;
-  border-radius: 10px;
-}
+  border-radius: 3px; }
+
 .products {
   height: 67vh;
   width: 80%;
@@ -80,6 +97,7 @@ svg {
   height: 200px;
   width: 200px;
   border: red solid 2px;
+  border-radius: 5px;
 }
 
 .product1 {
