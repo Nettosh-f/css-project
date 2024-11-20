@@ -158,6 +158,8 @@ section div video {
   padding: 5%;
   background-color: #e6d891;
   border-radius: 10px;
+  transition: transform 0.2s;
+
 }
 
   .products-2 {
@@ -168,7 +170,9 @@ section div video {
     padding: 5%;
     background-color: #e6d891;
     border-radius: 10px;
+    transition: transform 0.2s;
   }
+ 
   .products-3 {
     display: flex;
     justify-content: center;
@@ -177,6 +181,8 @@ section div video {
     padding: 5%;
     background-color: #e6d891;
     border-radius: 10px;
+    transition: transform 0.2s;
+
   }
   .products-4 {
     display: flex;
@@ -186,6 +192,8 @@ section div video {
     padding: 5%;
     background-color: #e6d891;
     border-radius: 10px;
+    transition: transform 0.2s;
+
   }
   .products-5 {
     display: flex;
@@ -195,6 +203,8 @@ section div video {
     padding: 5%;
     background-color: #e6d891;
     border-radius: 10px;
+    transition: transform 0.2s;
+
   }
   .products-6 {
     display: flex;
@@ -204,7 +214,15 @@ section div video {
     padding: 5%;
     background-color: #e6d891;
     border-radius: 10px;
+    transition: transform 0.2s;
+
   }
+  .products-1:hover { transform: scale(1.05); }
+  .products-2:hover { transform: scale(1.05); }
+  .products-3:hover { transform: scale(1.05); }
+  .products-4:hover { transform: scale(1.05); }
+  .products-5:hover { transform: scale(1.05); }
+  .products-6:hover { transform: scale(1.05); }
 .products-1-img {
   width: 70%;
 
