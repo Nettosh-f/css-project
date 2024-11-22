@@ -195,16 +195,17 @@
 		</div>
 	</header>
 	<nav class="navbar navbar-box">
-		<div class="navbar navbar-jump">JUMP TO:</div>
-		<div class="navbar navbar-video"><a href="#hero-box">OUR VIDEO</a></div>
-
-		<div class="navbar navbar-products"><a href="#products">OUR PRODUCTS</a> </div>
-
-		<div class="navbar navbar-FAQ">OUR FAQ</div>
+		<h4 class="navbar navbar-jump">JUMP TO:</h4>
+		<div class="nav-list">
+			<div><a href="#hero-box">OUR VIDEO</a></div>
+			<div><a href="#products">OUR PRODUCTS</a></div>
+			<div><a class="navbar navbar-FAQ">OUR FAQ</a></div>
+		</div>
+		</ul>
 	</nav>
 	<section class="hero hero-box" id="hero-box">
 		<div class="hero hero-video">
-			<video src="./assets/video/9006740-hd_1920_1080_30fps.mp4" autoplay loop ></video>
+			<video src="./assets/video/9006740-hd_1920_1080_30fps.mp4" autoplay loop></video>
 		</div>
 
 		<div class="hero hero-text-box">
@@ -220,7 +221,47 @@
 	</div>
 	<section class="products-wrapper">
 		<div class="products-box" id="products">
-			<div class="products products-1">
+			<div class="card">
+				<div class="card-image">
+					<img src="/api/placeholder/300/200" alt="Interactive Pet Toy">
+				</div>
+				<div class="card-content">
+					<h2 class="product-name">Interactive Ball Puzzle Toy</h2>
+					<div class="price">
+						<span>$14.99</span>
+						<span class="badge">Best Seller</span>
+					</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-image">
+					<img src="/api/placeholder/300/200" alt="Interactive Pet Toy">
+				</div>
+				<div class="card-content">
+					<h2 class="product-name">Interactive Ball Puzzle Toy</h2>
+					<div class="price">
+						<span>$14.99</span>
+						<span class="badge">Best Seller</span>
+					</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-image">
+					<img src="/api/placeholder/300/200" alt="Interactive Pet Toy">
+				</div>
+				<div class="card-content">
+					<h2 class="product-name">Interactive Ball Puzzle Toy</h2>
+					<div class="price">
+						<span>$14.99</span>
+						<span class="badge">Best Seller</span>
+					</div>
+				</div>
+			</div>
+
+
+
+
+			<!-- <div class="products products-1">
 				<a href="./product1.html">
 					<div class="products-1-img"><img src="./assets/images/819wT9kNUgL.jpg" alt="chew toy"></div>
 					<div class="product-text-box-1">
@@ -230,33 +271,44 @@
 
 			</div>
 		</div>
-		<div class="products products-2">
+		<div class="card">
+			<div class="card-image">
+				<img src="/api/placeholder/300/200" alt="Interactive Pet Toy">
+			</div>
+			<div class="card-content">
+				<h2 class="product-name">Interactive Ball Puzzle Toy</h2>
+				<div class="price">
+					<span>$14.99</span>
+					<span class="badge">Best Seller</span>
+				</div>
+			</div>
+		</div> -->
+		<!-- <div class="products products-2">
 			<a href="./product1.html"></a>
 			<div class="products-1-img"><img src="./assets/images/320028747_max.jpg" alt="dog toy"></div>
 			<div class="product-text-box-1">
 				<div>Chew Toy for Aggressive Chewers</div>
 				<div>699.99 $</div>
-			</a>
-			</div>
-		</div>
+				</a>
+			</div> -->
+		<!-- </div>
 		<div class="products products-3">
 			<a href="./product1.html">
-			<div class="products-1-img"><img
-					src="./assets/images/71KHlJw+8TL._AC_SL1500_.jpg"
-					alt="dog toy"></div>
-			<div class="product-text-box-1">
-				<div>Teeth-Cleaning Veggie Toy</div>
-				<div>69.99 $</div>
+				<div class="products-1-img"><img src="./assets/images/71KHlJw+8TL._AC_SL1500_.jpg" alt="dog toy"></div>
+				<div class="product-text-box-1">
+					<div>Teeth-Cleaning Veggie Toy</div>
+					<div>69.99 $</div>
 			</a>
 
-			</div>
 		</div>
 		</div>
+		</div> -->
 	</section>
 	<footer class="footer-wrapper">
-		<div class="footer footer-socials">
-			<div class="footer instagram"><svg width="40px" height="40px" viewBox="0 0 32 32" fill="none"
-					xmlns="http://www.w3.org/2000/svg">
+		<div class="footer-socials">
+			<div>
+
+				<svg width="40px" height="40px" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<rect x="2" y="2" width="28" height="28" rx="6" fill="url(#paint0_radial_87_7153)" />
 					<rect x="2" y="2" width="28" height="28" rx="6" fill="url(#paint1_radial_87_7153)" />
 					<rect x="2" y="2" width="28" height="28" rx="6" fill="url(#paint2_radial_87_7153)" />
@@ -290,25 +342,23 @@
 							<stop offset="1" stop-color="#6A45BE" stop-opacity="0" />
 						</radialGradient>
 					</defs>
-				</svg></div>
-			<div class="footer facebook"><svg width="40px" height="40px" viewBox="0 0 48 48" fill="none"
-					xmlns="http://www.w3.org/2000/svg">
+
+				</svg>
+				<svg width="40px" height="40px" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<circle cx="24" cy="24" r="20" fill="#3B5998" />
 					<path fill-rule="evenodd" clip-rule="evenodd"
 						d="M29.315 16.9578C28.6917 16.8331 27.8498 16.74 27.3204 16.74C25.8867 16.74 25.7936 17.3633 25.7936 18.3607V20.1361H29.3774L29.065 23.8137H25.7936V35H21.3063V23.8137H19V20.1361H21.3063V17.8613C21.3063 14.7453 22.7708 13 26.4477 13C27.7252 13 28.6602 13.187 29.8753 13.4363L29.315 16.9578Z"
 						fill="white" />
-				</svg></div>
-			<div class="footer github"><svg width="40px" height="40px" viewBox="0 0 32 32" fill="none"
-					xmlns="http://www.w3.org/2000/svg">
+				</svg>
+				<svg width="40px" height="40px" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<path
 						d="M16 2C8.27812 2 2 8.27812 2 16C2 23.7219 8.27812 30 16 30C23.7219 30 30 23.7219 30 16C30 8.27812 23.7219 2 16 2Z"
 						fill="#FC471E" />
 					<path fill-rule="evenodd" clip-rule="evenodd"
 						d="M20.0193 8.90951C20.0066 8.98984 20 9.07226 20 9.15626C20 10.0043 20.6716 10.6918 21.5 10.6918C22.3284 10.6918 23 10.0043 23 9.15626C23 8.30819 22.3284 7.6207 21.5 7.6207C21.1309 7.6207 20.7929 7.7572 20.5315 7.98359L16.6362 7L15.2283 12.7651C13.3554 12.8913 11.671 13.4719 10.4003 14.3485C10.0395 13.9863 9.54524 13.7629 9 13.7629C7.89543 13.7629 7 14.6796 7 15.8103C7 16.5973 7.43366 17.2805 8.06967 17.6232C8.02372 17.8674 8 18.1166 8 18.3696C8 21.4792 11.5817 24 16 24C20.4183 24 24 21.4792 24 18.3696C24 18.1166 23.9763 17.8674 23.9303 17.6232C24.5663 17.2805 25 16.5973 25 15.8103C25 14.6796 24.1046 13.7629 23 13.7629C22.4548 13.7629 21.9605 13.9863 21.5997 14.3485C20.2153 13.3935 18.3399 12.7897 16.2647 12.7423L17.3638 8.24143L20.0193 8.90951ZM12.5 18.8815C13.3284 18.8815 14 18.194 14 17.3459C14 16.4978 13.3284 15.8103 12.5 15.8103C11.6716 15.8103 11 16.4978 11 17.3459C11 18.194 11.6716 18.8815 12.5 18.8815ZM19.5 18.8815C20.3284 18.8815 21 18.194 21 17.3459C21 16.4978 20.3284 15.8103 19.5 15.8103C18.6716 15.8103 18 16.4978 18 17.3459C18 18.194 18.6716 18.8815 19.5 18.8815ZM12.7773 20.503C12.5476 20.3462 12.2372 20.4097 12.084 20.6449C11.9308 20.8802 11.9929 21.198 12.2226 21.3548C13.3107 22.0973 14.6554 22.4686 16 22.4686C17.3446 22.4686 18.6893 22.0973 19.7773 21.3548C20.0071 21.198 20.0692 20.8802 19.916 20.6449C19.7628 20.4097 19.4524 20.3462 19.2226 20.503C18.3025 21.1309 17.1513 21.4449 16 21.4449C15.3173 21.4449 14.6345 21.3345 14 21.1137C13.5646 20.9621 13.1518 20.7585 12.7773 20.503Z"
-						fill="white" />
-				</svg></div>
-			<div class="footer elephant"><svg width="40px" height="40px" viewBox="0 0 32 32" fill="none"
-					xmlns="http://www.w3.org/2000/svg">
+						fill="white" />	
+				</svg>
+				<svg width="40px" height="40px" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<path
 						d="M8.45095 19.7926C8.60723 18.4987 9.1379 17.7743 10.1379 17.0317C11.5688 16.0259 13.3561 16.5948 13.3561 16.5948V13.2197C13.7907 13.2085 14.2254 13.2343 14.6551 13.2966V17.6401C14.6551 17.6401 12.8683 17.0712 11.4375 18.0775C10.438 18.8196 9.90623 19.5446 9.7505 20.8385C9.74562 21.5411 9.87747 22.4595 10.4847 23.2536C10.3345 23.1766 10.1815 23.0889 10.0256 22.9905C8.68807 22.0923 8.44444 20.7449 8.45095 19.7926ZM22.0352 6.97898C21.0509 5.90039 20.6786 4.81139 20.5441 4.04639H21.7823C21.7823 4.04639 21.5354 6.05224 23.3347 8.02482L23.3597 8.05134C22.8747 7.7463 22.43 7.38624 22.0352 6.97898ZM28 10.0369V14.293C28 14.293 26.42 14.2312 25.2507 13.9337C23.6179 13.5176 22.5685 12.8795 22.5685 12.8795C22.5685 12.8795 21.8436 12.4245 21.785 12.3928V21.1817C21.785 21.6711 21.651 22.8932 21.2424 23.9125C20.709 25.246 19.8859 26.1212 19.7345 26.3001C19.7345 26.3001 18.7334 27.4832 16.9672 28.28C15.3752 28.9987 13.9774 28.9805 13.5596 28.9987C13.5596 28.9987 11.1434 29.0944 8.96915 27.6814C8.49898 27.3699 8.06011 27.0172 7.6582 26.6277L7.66906 26.6355C9.84383 28.0485 12.2595 27.9528 12.2595 27.9528C12.6779 27.9346 14.0756 27.9528 15.6671 27.2341C17.4317 26.4374 18.4344 25.2543 18.4344 25.2543C18.5842 25.0754 19.4111 24.2001 19.9423 22.8662C20.3498 21.8474 20.4849 20.6247 20.4849 20.1354V11.3475C20.5435 11.3797 21.2679 11.8347 21.2679 11.8347C21.2679 11.8347 22.3179 12.4734 23.9506 12.8889C25.1204 13.1864 26.7 13.2483 26.7 13.2483V9.91314C27.2404 10.0343 27.7011 10.0671 28 10.0369Z"
 						fill="#EE1D52" />
@@ -323,15 +373,16 @@
 					<path
 						d="M20.5438 4.04635H17.2881V20.6159C17.2881 21.1983 17.2881 21.76 17.0863 22.3211C16.7575 23.2167 16.058 24.0253 15.1258 24.3842C13.7265 24.923 12.6326 24.8632 11.3276 24.0368C11.0036 23.823 10.7187 23.5594 10.4844 23.2567C11.5962 23.8251 12.5913 23.8152 13.8241 23.341C14.7558 22.9821 15.4563 22.1734 15.784 21.2774C15.9891 20.7178 15.9864 20.1546 15.9864 19.5726V3H20.4819C20.4819 3 20.4315 3.41188 20.5438 4.04635ZM26.7002 8.99104V9.9131C26.1725 9.79263 25.6609 9.61447 25.1755 9.38213C24.2352 8.93228 23.5026 8.19952 23.3594 8.0513C23.5256 8.1559 23.6981 8.25106 23.8759 8.33629C25.0192 8.88339 26.1451 9.04669 26.7002 8.99104Z"
 						fill="#69C9D0" />
-				</svg></div>
+				</svg>
+			</div>
 		</div>
-		<div class="footer footer-contact">
+		<div class="footer-contact">
 			<div>contact us:</div>
 			<div>email@example.com</div>
 			<div>+123 456 789</div>
 			<div>Israel, Hiafa, Techion 69</div>
 		</div>
-		<div class="footer footer-complaint">
+		<div class="footer-complaint">
 			<div>Have a problem? Leave us a massage:</div>
 			<div>
 				<form>

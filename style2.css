@@ -1,14 +1,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Outfit:wght@100..900&family=Space+Grotesk:wght@300..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap');
+
 body {
   margin: 0px;
   padding: 0px;
   background-image: url("./assets/images/aerial-view-plains-fields.jpg");
+  font-family: "Works Sans", sans-serif, 'Arial', Times, serif;
 }
 .banner-wrapper {
   width: 100%;
   max-height: 20vh;
-  font-family: "work sans", sans-serif, 'Times New Roman', Times, serif;
 }
 .banner-box {
   background: linear-gradient(to right, #b6d0e6, #9cc6ef);
@@ -73,6 +74,86 @@ body {
   justify-items: center;
   border-color: aquamarine;
 }
+
+.card {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px) rotate(2deg);
+  box-shadow: 0 15px 30px rgba(255, 99, 136, 0.2);
+}
+
+.card-image {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  background-color: #ffebf0;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.card:hover .card-image img {
+  transform: scale(1.1);
+}
+
+.card-content {
+  padding: 20px;
+  background: linear-gradient(to bottom right, #ff6388, #ff8cc6);
+  color: #fff;
+}
+
+.product-name {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  font-family: Arial, sans-serif;
+}
+
+.price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.badge {
+  background-color: #fff;
+  color: #ff6388;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 480px) {
+  .card {
+      width: 100%;
+      max-width: 280px;
+  }
+
+  .card-image {
+      height: 180px;
+  }
+
+  .product-name {
+      font-size: 1.2rem;
+  }
+
+  .price {
+      font-size: 1.1rem;
+  }
+}
 .banner-info div p {
   margin: 2%;
 }
@@ -86,7 +167,7 @@ body {
 
 .navbar-box {
   position: fixed;
-  right: 5px;
+  left: 5px;
   top: 22vh;
   display: flex;
   flex-direction: column;
@@ -96,6 +177,36 @@ body {
   background-color: #caa86b;
   border-radius: 10px;
 }
+
+.navbar-box div div {
+  padding: 10px 20px;
+  margin: 0;
+  color: rgb(40, 40, 40);
+  
+  padding: 10px 10px;
+  width: 100%;
+  /* margin: 5px 0; */
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: rgb(40, 40, 40);
+}
+
+.navbar-box div {
+  width: 100%;
+}
+
+.navbar-box .nav-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-list div:hover {
+  background-color: #ccae77;
+}
+
+
 .navbar-box div {
   width: 120px;
   text-align: center;
@@ -269,30 +380,38 @@ h2 {
   margin-top: 10px;
   background-color: #39652c;
   display: flex;
+  justify-content: space-around;
   flex-direction: row;
+  color: white;
+  padding: 40px 0;
 }
-.footer-wrapper {
-  height: 20vw;
-}
+
 .footer-socials {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  margin: 20px;
-  width: 20%;
-}
-.footer-socials div {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  flex: 1;
 }
+
+.footer-socials div {
+  width: 50%;
+  margin: auto;
+}
+
+
+.footer-socials div svg {
+  width: 48%;
+  margin-top: 20px;
+}
+
 .footer-contact {
+  flex: 1;
   display: flex;
   align-items: center;
   justify-content: space-around;
   flex-direction: column;
-  width: 40%;
 }
 .footer-complaint {
+  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -310,9 +429,6 @@ h2 {
 }
 .footer-complaint {
   display: none;
-}
-.footer-wrapper {
-
 }
 
 .banner-name {
@@ -339,15 +455,6 @@ h2 {
 }
   .hero-text {
 
-  }
-  .footer-wrapper {
-    height: 20vh;
-    width: 100%;
-    position: absolute;
-    bottom: 0px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
   }
 }
 
