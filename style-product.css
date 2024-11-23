@@ -4,6 +4,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: sans-serif;
+  overflow-x: hidden;
 }
 
 .video-container {
@@ -130,6 +131,7 @@ label:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  box-shadow: 5px 5px 20px #0000000F;
 }
 .inner-product-box {
   height: 100%;
@@ -189,12 +191,13 @@ margin-top: 10px;
 .product {
   background-color: #ffffff;
   width: 60%;
-  height: 60%;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: space-around;
   flex-direction: column;
+ 
+  box-shadow: 5px 5px 5px #0000000F;
 }
 .carousel-wrapper {
   display: flex;
