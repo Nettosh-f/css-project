@@ -1,6 +1,4 @@
-* {
-  /* border: red solid 1px; */
-}
+
 body {
   margin: 0;
   padding: 0;
@@ -108,9 +106,10 @@ body {
 .hero-container {
   display: flex;
       height: 100vh;
-      width: 100%;
-      align-items: center;
-      justify-content: center;
+      width: 80%;
+      padding-top: 25vh;
+      /* align-items: center; */
+      /* justify-content: center; */
       color: wheat;
       font-size: 2.7em;
       padding: 60px;
@@ -292,4 +291,5 @@ footer {
   .divider {
     transform: rotate(90deg); 
   }
+
  }
